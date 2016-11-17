@@ -21,14 +21,15 @@
           <td><label for="email">Email:</label></td>
           <td>
             <input type="text" name="email" maxlength="50" size="30">
-          </td>
+          <td><label for="Nr.telefonit">Nr.telefonit:</label></td>
         </tr>
 
         <tr>
           <td valign="top">Want a reply?</td>
           <td>
             <input type="radio" name="want_reply" value="sure">Sure!<br/>
-            <input type="radio" name="want_reply" value="nope">Nope.
+            <input type="radio" name="want_reply" value="nope">Nope.<br/>
+            <input type="radio" name="want_reply" value="Maybe">Maybe.<br/>
           </td>
         </tr>
 
@@ -40,15 +41,19 @@
             <br/>
             <input type="checkbox" name="reply_by_phone">
             <label for="reply_by_phone">Phone</label>
+            <input type="checkbox" name="reply_by_other">
+            <label for="reply_by_other">Other</label>
           </td>
         </tr>
 
         <tr>
           <td valign="top">
             <label for="message">Message:</label>
+            <label for="comments">Comments:</label>
           </td>
           <td>
             <textarea name="message" maxlength="1000" cols="25" rows="6"></textarea>
+            <textarea name="comments" maxlength="1000" cols="25" rows="6"></textarea>
           </td>
         </tr>
 
